@@ -1,0 +1,244 @@
+header h1{
+    display: inline-block;
+    font-size: 35px;
+    color: white;
+    
+}
+header {
+    margin: 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+   
+}
+
+.Intro {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+    box-sizing: border-box;
+    max-width: 75%;
+}
+
+body{
+    background-color: rgb(22, 22, 22);
+    color: white;
+    line-height: 25px;
+}
+
+
+nav .bar{
+    display: flex;
+    color: white;
+    list-style-type: none;
+    flex: 0 0 30%;
+}
+nav .social{
+    display: flex;
+    color: white;
+    list-style-type: none;
+    flex: 0 0 25%;
+    text-align: right;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    background-color: black;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    position: sticky;
+    top: 0px;
+    flex-wrap: wrap;
+}
+nav li{
+    min-width: 150px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+
+.Projects{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+div h3{
+    text-align: center;
+    min-width: 100%;
+}
+div p{
+    min-width: 45%;
+    height: 200px;
+    flex-basis: 300px;
+    text-align: center;
+    margin: 20px 12px;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: #d8d8d8;
+    color: #3b3b3b;;
+}
+
+.About {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 0 0 150px;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 10%;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    line-height: 30px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.About h3{
+    text-align: center;
+    min-width: 100%;
+    
+}
+
+.About p{
+    max-width: 55%;
+    margin-left: 20px;
+
+}
+
+.About div img{
+    max-width: 35%;
+}
+
+section {
+    display: flex;
+    flex: 0 0 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 5px 10%;
+    box-sizing: border-box;
+}
+/*
+section .head{
+    font-size: 20px;
+    min-width: 100%;
+   text-emphasis: none;
+} */
+section p{
+    font-size: 17px;
+    min-width: 30%;
+}
+section p a{
+    color: whitesmoke;
+}
+
+footer{
+    background-color: #3b3b3b;
+    font-size: 15px;
+    color: rgb(204, 204, 204);
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+}
+
+.navigation li:hover {
+    text-decoration: underline;
+    font-size: 1.2em;
+}
+
+.Contact p:hover{
+    font-size: 1.2em;
+}
+
+@media screen and (max-width: 1080px) {
+    .About p{
+        max-width: 95%;
+    }
+    .About img{
+        padding-left: 10%;
+    }
+    .Contact p{
+        max-width: 80%;
+        padding: 5px 15%;
+        box-sizing: border-box;
+    }
+/*    .Contact .email {
+        min-width: 60%;
+        padding-left: 40%;
+    } */
+}
+
+@media screen and (max-width: 880px) {
+    header h1{
+        font-size: 30px;
+    }
+    nav li{
+        min-width: 120px;
+    }
+    nav .social{
+        padding-right: 15px;
+    }
+
+}
+@media screen and (max-width: 780px) {
+    nav li{
+        min-width: 100px;
+    }
+    .About p{
+        letter-spacing: 0.5px;
+
+    }
+}
+@media screen and (max-width: 690px) {
+    nav {
+        justify-content: center;
+        width: 100%;
+        padding-left: 0;
+    }
+    nav .bar{
+        justify-content: center;
+        min-width: 90%;
+        padding-left: 0;
+    }
+    nav .social{
+        justify-content: center;
+        flex-grow: 1;
+        text-align: center;
+        padding-left: 0;
+    }
+    nav li{
+        min-width: none;
+        flex-grow: 1;
+        text-align: center;
+    }
+    .Projects {
+        justify-content: center;
+    }
+    .About {
+        line-height: 20px;
+        font-size: 0.9em;
+    }
+    .Contact p{
+        font-size: 15px;
+    }
+    .Contact p:hover {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:400px) {
+    header h1{
+        font-size: 20px;
+    }
+    .About p {
+        font-size: 15px;
+    }
+    .Contact {
+        font-size: 12px;
+    }
+    div p{
+        height: 100px ;
+    }
+}
